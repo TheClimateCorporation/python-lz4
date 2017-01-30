@@ -24,7 +24,9 @@ def library_is_installed(libname):
 
 # Check to see if we have a lz4 library installed on the system and
 # use it if so. If not, we'll use the bundled library.
-liblz4_found = library_is_installed('liblz4')
+# liblz4_found = library_is_installed('liblz4')
+# Mark liblz4_found as false to use library code in this package
+liblz4_found = False
 
 # Check to see if we have the py3c headers installed on the system and
 # use it if so. If not, we'll use the bundled library.
